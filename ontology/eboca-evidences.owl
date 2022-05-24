@@ -28,7 +28,7 @@
         <vann:modified>2022-05-24</vann:modified>
         <vann:preferredNamespaceUri rdf:resource="https://w3id.org/def/eboca"/>
         <rdfs:seeAlso>http://drugs4covid.oeg-upm.net</rdfs:seeAlso>
-        <owl:versionInfo>0.1.0</owl:versionInfo>
+        <owl:versionInfo>v0.1.0</owl:versionInfo>
     </owl:Ontology>
     
 
