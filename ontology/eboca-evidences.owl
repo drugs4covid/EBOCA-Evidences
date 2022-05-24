@@ -1189,6 +1189,7 @@ computationally derived.</owl:annotatedTarget>
 
     <owl:Class rdf:about="https://w3id.org/def/eboca-evidences#Evidence">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECO_0000000"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A type of information that is used to support an assertion.</rdfs:comment>
         <rdfs:label>evidence</rdfs:label>
     </owl:Class>
 </rdf:RDF>
