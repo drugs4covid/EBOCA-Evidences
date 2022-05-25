@@ -28,7 +28,7 @@
         <vann:modified>2022-05-24</vann:modified>
         <vann:preferredNamespaceUri rdf:resource="https://w3id.org/def/eboca"/>
         <rdfs:seeAlso>http://drugs4covid.oeg-upm.net</rdfs:seeAlso>
-        <owl:versionInfo>0.1.0</owl:versionInfo>
+        <owl:versionInfo>v0.1.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1189,6 +1189,7 @@ computationally derived.</owl:annotatedTarget>
 
     <owl:Class rdf:about="https://w3id.org/def/eboca-evidences#Evidence">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECO_0000000"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A type of information that is used to support an assertion.</rdfs:comment>
         <rdfs:label>evidence</rdfs:label>
     </owl:Class>
 </rdf:RDF>
