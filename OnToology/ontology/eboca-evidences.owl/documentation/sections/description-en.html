@@ -1,0 +1,41 @@
+<h2 id="desc" class="list">EBOCA Evidences: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Figure 1 provides a general overview of the EBOCA Evidences Ontology. This representation
+follows the [Chowlk notation](https://chowlk.linkeddata.es/notation.html).
+</span>
+
+<center>
+  <img src="images/eboca-evidences.png" alt="General overview of the EBOCA Evidences Ontology." width="50%"> <figcaption><b>Figure 1.</b> - General overview of the EBOCA Evidences Ontology.</figcaption>
+</center>
+
+<span class=markdown>
+  The EBOCA Evidences Ontology aims to describe provenance and metadata for
+  evidences of associations among concepts. It reuses classes and properties
+  from several ontologies:
+  [Semanticscience Integrated Ontology (SIO)](http://semanticscience.org/ontology/sio.owl),
+  [Evidence & Conclusion Ontology (ECO)]( http://purl.obolibrary.org/obo/eco.owl),
+  [Friend Of A Friend (FOAF)](http://xmlns.com/foaf/spec/),
+  [DCMI Metadata Terms](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/),
+  [Provenance, Authoring and Versioning (PAV)](https://pav-ontology.github.io/pav/),
+  and the SPAR Ontologies
+  [FRBR-aligned Bibliographic Ontology (FaBiO)](https://sparontologies.github.io/fabio/current/fabio.html#) and
+  [Document Components Ontology (DoCO)](https://sparontologies.github.io/doco/current/doco.html#).
+
+  The associations between concepts are represented with the class ``sio:SIO_000897`` "association".
+  This association can be annotated with its creator (``pav:createdBy``), that is a ``foaf:Agent``;
+  and the software (``dc:Software``) it was created with (``pav:createdWith``). This association
+  is linked to its correspondent ``Evidence`` with ``sio:SIO_000772`` "has evidence".
+
+  The class ``Evidence`` is a subclass of ``obo:ECO_0000000`` "evidence". Two subclasses of "evidence"
+  are highlighted, "computational inference" and "documented statement evidence". Evidences
+  can be annotated optionally with a confidence score (``score``), date of creation (``pav:createdOn``)
+  and update (``pav:lasUpdatedOn``), and version (``pav:version``). The provenance of the evidence
+  can be indicated with ``pav:derivedFrom``.
+
+  The use case in which this ontology is implemented consist in extracting evidences of
+  associations between biomedical concepts from texts -- more exactly, from paragraphs.
+  For that reason, the class ``doco:Paragraph`` is reused. To add more information to where
+  the paragraphs come form and where can they be found, the class ``fabio:Expression`` is
+  reused.
+
+</span>
