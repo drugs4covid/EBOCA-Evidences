@@ -1,0 +1,187 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://w3id.org/def/vtc#desiredBehaviour
+<https://w3id.org/def/vtc#desiredBehaviour> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/def/vtc#TestCaseDesign
+<https://w3id.org/def/vtc#TestCaseDesign> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://example.org/ns#Test1
+<http://example.org/ns#Test1> rdf:type owl:NamedIndividual ,
+                                       <https://w3id.org/def/vtc#TestCaseDesign> ;
+                              <https://w3id.org/def/vtc#desiredBehaviour> "Evidence score float" .
+
+
+###  http://example.org/ns#Test10
+<http://example.org/ns#Test10> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "ECO_0007672 subClassOf ECO_0000000" .
+
+
+###  http://example.org/ns#Test11
+<http://example.org/ns#Test11> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Expression part Paragraph" .
+
+
+###  http://example.org/ns#Test12
+<http://example.org/ns#Test12> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "SIO_000897 SIO_000772 Evidence" .
+
+
+###  http://example.org/ns#Test13
+<http://example.org/ns#Test13> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Evidence derivedFrom Paragraph" .
+
+
+###  http://example.org/ns#Test14
+<http://example.org/ns#Test14> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Evidence score float" .
+
+
+###  http://example.org/ns#Test15
+<http://example.org/ns#Test15> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Evidence lastUpdateOn dateTime" .
+
+
+###  http://example.org/ns#Test16
+<http://example.org/ns#Test16> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Evidence createdOn dateTime" .
+
+
+###  http://example.org/ns#Test17
+<http://example.org/ns#Test17> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Paragraph identifier Literal" .
+
+
+###  http://example.org/ns#Test18
+<http://example.org/ns#Test18> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Expression identifier Literal" .
+
+
+###  http://example.org/ns#Test19
+<http://example.org/ns#Test19> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "sio:SIO_000897 pav:createdWith dc:Software" .
+
+
+###  http://example.org/ns#Test2
+<http://example.org/ns#Test2> rdf:type owl:NamedIndividual ,
+                                       <https://w3id.org/def/vtc#TestCaseDesign> ;
+                              <https://w3id.org/def/vtc#desiredBehaviour> "Evidence lastUpdateOn dateTime" .
+
+
+###  http://example.org/ns#Test20
+<http://example.org/ns#Test20> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "sio:SIO_000897 sio:SIO000772 Evidence" .
+
+
+###  http://example.org/ns#Test21
+<http://example.org/ns#Test21> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "ECO_0006151 subClassOf ECO_0000000" .
+
+
+###  http://example.org/ns#Test22
+<http://example.org/ns#Test22> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Evidence subClassOf ECO_0000000" .
+
+
+###  http://example.org/ns#Test23
+<http://example.org/ns#Test23> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "ECO_0007672 subClassOf ECO_0000000" .
+
+
+###  http://example.org/ns#Test24
+<http://example.org/ns#Test24> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Expression part Paragraph" .
+
+
+###  http://example.org/ns#Test25
+<http://example.org/ns#Test25> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "SIO_000897 SIO_000772 Evidence" .
+
+
+###  http://example.org/ns#Test26
+<http://example.org/ns#Test26> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/def/vtc#TestCaseDesign> ;
+                               <https://w3id.org/def/vtc#desiredBehaviour> "Evidence derivedFrom Paragraph" .
+
+
+###  http://example.org/ns#Test3
+<http://example.org/ns#Test3> rdf:type owl:NamedIndividual ,
+                                       <https://w3id.org/def/vtc#TestCaseDesign> ;
+                              <https://w3id.org/def/vtc#desiredBehaviour> "Evidence createdOn dateTime" .
+
+
+###  http://example.org/ns#Test4
+<http://example.org/ns#Test4> rdf:type owl:NamedIndividual ,
+                                       <https://w3id.org/def/vtc#TestCaseDesign> ;
+                              <https://w3id.org/def/vtc#desiredBehaviour> "Paragraph identifier Literal" .
+
+
+###  http://example.org/ns#Test5
+<http://example.org/ns#Test5> rdf:type owl:NamedIndividual ,
+                                       <https://w3id.org/def/vtc#TestCaseDesign> ;
+                              <https://w3id.org/def/vtc#desiredBehaviour> "Expression identifier Literal" .
+
+
+###  http://example.org/ns#Test6
+<http://example.org/ns#Test6> rdf:type owl:NamedIndividual ,
+                                       <https://w3id.org/def/vtc#TestCaseDesign> ;
+                              <https://w3id.org/def/vtc#desiredBehaviour> "SIO_000897 createdWith Software" .
+
+
+###  http://example.org/ns#Test7
+<http://example.org/ns#Test7> rdf:type owl:NamedIndividual ,
+                                       <https://w3id.org/def/vtc#TestCaseDesign> ;
+                              <https://w3id.org/def/vtc#desiredBehaviour> "SIO_000897 SIO000772 Evidence" .
+
+
+###  http://example.org/ns#Test8
+<http://example.org/ns#Test8> rdf:type owl:NamedIndividual ,
+                                       <https://w3id.org/def/vtc#TestCaseDesign> ;
+                              <https://w3id.org/def/vtc#desiredBehaviour> "ECO_0006151 subClassOf ECO_0000000" .
+
+
+###  http://example.org/ns#Test9
+<http://example.org/ns#Test9> rdf:type owl:NamedIndividual ,
+                                       <https://w3id.org/def/vtc#TestCaseDesign> ;
+                              <https://w3id.org/def/vtc#desiredBehaviour> "Evidence subClassOf ECO_0000000" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

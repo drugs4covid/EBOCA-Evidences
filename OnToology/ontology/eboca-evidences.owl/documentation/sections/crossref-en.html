@@ -1,4 +1,4 @@
-<h2 id="crossreference" class="list">EBOCA Evidences: Classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<h2 id="crossreference" class="list">Cross-reference for Evidences and Provenance of Associations Between Concepts (EBOCA Evidences) classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by Evidences and Provenance of Associations Between Concepts (EBOCA Evidences).
 <div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
@@ -22,7 +22,7 @@ This section provides details for each class and property defined by Evidences a
          <a href="#http://purl.obolibrary.org/obo/ECO_0000000" title="http://purl.obolibrary.org/obo/ECO_0000000">evidence</a>
       </li>
       <li>
-         <a href="#-evidences#Evidence" title="https://w3id.org/def/eboca-evidences#Evidence">evidence</a>
+         <a href="#https://w3id.org/eboca/evidences#Evidence" title="https://w3id.org/eboca/evidences#Evidence">evidence</a>
       </li>
       <li>
          <a href="#http://purl.org/spar/fabio/Expression" title="http://purl.org/spar/fabio/Expression">expression</a>
@@ -97,7 +97,7 @@ This section provides details for each class and property defined by Evidences a
       <p>
          <strong>IRI:</strong> http://purl.obolibrary.org/obo/ECO_0000362</p>
       <div class="comment">
-         <span class="markdown">A type of inferential evidence based on a computationally derived unary inference or an inference chain in which at least one step is
+         <span class="markdown">A type of inferential evidence based on a computationally derived unary inference or an inference chain in which at least one step is 
 computationally derived.</span>
       </div>
       <dl class="description">
@@ -149,19 +149,27 @@ computationally derived.</span>
          <dd>
             <a href="#http://purl.obolibrary.org/obo/ECO_0007672" title="http://purl.obolibrary.org/obo/ECO_0007672">computational evidence</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://purl.obolibrary.org/obo/ECO_0006151" title="http://purl.obolibrary.org/obo/ECO_0006151">documented statement evidence</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#-evidences#Evidence" title="https://w3id.org/def/eboca-evidences#Evidence">evidence</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/eboca/evidences#Evidence" title="https://w3id.org/eboca/evidences#Evidence">evidence</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://purl.obolibrary.org/obo/ECO_0000361" title="http://purl.obolibrary.org/obo/ECO_0000361">inferential evidence</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#http://purl.org/spar/fabio/Expression" title="http://purl.org/spar/fabio/Expression">expression</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="-evidences#Evidence">
+   <div class="entity" id="https://w3id.org/eboca/evidences#Evidence">
       <h3>evidence<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/eboca-evidences#Evidence</p>
+         <strong>IRI:</strong> https://w3id.org/eboca/evidences#Evidence</p>
+      <div class="comment">
+         <span class="markdown">A type of information that is used to support an assertion.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -170,7 +178,7 @@ computationally derived.</span>
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#-evidences#score" title="https://w3id.org/def/eboca-evidences#score">score</a>
+            <a href="#https://w3id.org/eboca/evidences#score" title="https://w3id.org/eboca/evidences#score">score</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
@@ -188,6 +196,13 @@ computationally derived.</span>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>https://w3id.org/def/eboca</dd>
+      </dl>
+      <dl class="description">
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#http://purl.obolibrary.org/obo/ECO_0000000" title="http://purl.obolibrary.org/obo/ECO_0000000">evidence</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://purl.obolibrary.org/obo/ECO_0000361">
@@ -233,8 +248,8 @@ computationally derived.</span>
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
-            <a href="#-evidences#section" title="https://w3id.org/def/eboca-evidences#section">section</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#-evidences#text" title="https://w3id.org/def/eboca-evidences#text">text</a>
+            <a href="#https://w3id.org/eboca/evidences#section" title="https://w3id.org/eboca/evidences#section">section</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/eboca/evidences#text" title="https://w3id.org/eboca/evidences#text">text</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
@@ -380,16 +395,21 @@ Details about who performed the derivation (e.g. who did the refining or modific
          <a href="#http://purl.org/pav/createdOn" title="http://purl.org/pav/createdOn">Created on</a>
       </li>
       <li>
+         <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">
+            <span>identifier</span>
+         </a>
+      </li>
+      <li>
          <a href="#http://purl.org/pav/lastUpdateOn" title="http://purl.org/pav/lastUpdateOn">Last updated on</a>
       </li>
       <li>
-         <a href="#-evidences#score" title="https://w3id.org/def/eboca-evidences#score">score</a>
+         <a href="#https://w3id.org/eboca/evidences#score" title="https://w3id.org/eboca/evidences#score">score</a>
       </li>
       <li>
-         <a href="#-evidences#section" title="https://w3id.org/def/eboca-evidences#section">section</a>
+         <a href="#https://w3id.org/eboca/evidences#section" title="https://w3id.org/eboca/evidences#section">section</a>
       </li>
       <li>
-         <a href="#-evidences#text" title="https://w3id.org/def/eboca-evidences#text">text</a>
+         <a href="#https://w3id.org/eboca/evidences#text" title="https://w3id.org/eboca/evidences#text">text</a>
       </li>
       <li>
          <a href="#http://purl.org/pav/version" title="http://purl.org/pav/version">Version</a>
@@ -428,6 +448,24 @@ The value is of type xsd:dateTime, for instance "2013-03-26T14:49:00+01:00"^^xsd
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://purl.org/dc/terms/identifier">
+      <h3>identifier<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/identifier</p>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://purl.org/pav/lastUpdateOn">
       <h3>Last updated on<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -459,18 +497,18 @@ The value is of type xsd:dateTime, for instance "2013-03-26T14:49:00+01:00"^^xsd
          </dl>
       </div>
    </div>
-   <div class="entity" id="-evidences#score">
+   <div class="entity" id="https://w3id.org/eboca/evidences#score">
       <h3>score<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/eboca-evidences#score</p>
+         <strong>IRI:</strong> https://w3id.org/eboca/evidences#score</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#-evidences#Evidence" title="https://w3id.org/def/eboca-evidences#Evidence">evidence</a>
+               <a href="#https://w3id.org/eboca/evidences#Evidence" title="https://w3id.org/eboca/evidences#Evidence">evidence</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -482,13 +520,13 @@ The value is of type xsd:dateTime, for instance "2013-03-26T14:49:00+01:00"^^xsd
          </dl>
       </div>
    </div>
-   <div class="entity" id="-evidences#section">
+   <div class="entity" id="https://w3id.org/eboca/evidences#section">
       <h3>section<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/eboca-evidences#section</p>
+         <strong>IRI:</strong> https://w3id.org/eboca/evidences#section</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -505,13 +543,13 @@ The value is of type xsd:dateTime, for instance "2013-03-26T14:49:00+01:00"^^xsd
          </dl>
       </div>
    </div>
-   <div class="entity" id="-evidences#text">
+   <div class="entity" id="https://w3id.org/eboca/evidences#text">
       <h3>text<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/eboca-evidences#text</p>
+         <strong>IRI:</strong> https://w3id.org/eboca/evidences#text</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
