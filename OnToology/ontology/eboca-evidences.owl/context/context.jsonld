@@ -4,7 +4,7 @@
       "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P396"
     },
     "score" : {
-      "@id" : "https://w3id.org/def/eboca-evidences#score",
+      "@id" : "https://w3id.org/eboca/evidences#score",
       "@type" : "http://www.w3.org/2001/XMLSchema#float"
     },
     "versionInfo" : {
@@ -68,7 +68,7 @@
       "@id" : "http://semanticscience.org/resource/SIO_000897"
     },
     "Evidence" : {
-      "@id" : "https://w3id.org/def/eboca-evidences#Evidence"
+      "@id" : "https://w3id.org/eboca/evidences#Evidence"
     },
     "ECO_0007672" : {
       "@id" : "http://purl.obolibrary.org/obo/ECO_0007672"
@@ -121,7 +121,7 @@
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "section" : {
-      "@id" : "https://w3id.org/def/eboca-evidences#section",
+      "@id" : "https://w3id.org/eboca/evidences#section",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "A32" : {
@@ -135,11 +135,12 @@
       "@type" : "@id"
     },
     "text" : {
-      "@id" : "https://w3id.org/def/eboca-evidences#text",
+      "@id" : "https://w3id.org/eboca/evidences#text",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "identifier" : {
-      "@id" : "http://purl.org/dc/elements/1.1/identifier"
+      "@id" : "http://purl.org/dc/terms/identifier",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
     "hasOBONamespace" : {
       "@id" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"
