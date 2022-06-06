@@ -8,38 +8,34 @@ follows the [Chowlk notation](https://chowlk.linkeddata.es/notation.html).
   <img src="images/eboca-evidences.png" alt="General overview of the EBOCA Evidences Ontology." width="50%"> <figcaption><b>Figure 1.</b> - General overview of the EBOCA Evidences Ontology.</figcaption>
 </center>
 
-<p>
+<span class=markdown>
   The EBOCA Evidences Ontology aims to describe provenance and metadata for
   evidences of associations among concepts. It reuses classes and properties
-  from several ontologies: <a href="http://semanticscience.org/ontology/sio.owl">Semanticscience Integrated Ontology (SIO)</a>,
-  <a href="http://purl.obolibrary.org/obo/eco.owl">Evidence & Conclusion Ontology (ECO)</a>,
-  <a href="http://xmlns.com/foaf/spec/">Friend Of A Friend (FOAF)</a>,
-  <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">DCMI Metadata Terms</a>,
-  <a href="https://pav-ontology.github.io/pav/">Provenance, Authoring and Versioning (PAV)</a>,
+  from several ontologies:
+  [Semanticscience Integrated Ontology (SIO)](http://semanticscience.org/ontology/sio.owl),
+  [Evidence & Conclusion Ontology (ECO)]( http://purl.obolibrary.org/obo/eco.owl),
+  [Friend Of A Friend (FOAF)](http://xmlns.com/foaf/spec/),
+  [DCMI Metadata Terms](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/),
+  [Provenance, Authoring and Versioning (PAV)](https://pav-ontology.github.io/pav/),
   and the SPAR Ontologies
-  <a href="https://sparontologies.github.io/fabio/current/fabio.html#">FRBR-aligned Bibliographic Ontology (FaBiO)</a>,
-  <a href="https://sparontologies.github.io/doco/current/doco.html#">Document Components Ontology (DoCO)</a>.
-</p>
+  [FRBR-aligned Bibliographic Ontology (FaBiO)](https://sparontologies.github.io/fabio/current/fabio.html#) and
+  [Document Components Ontology (DoCO)](https://sparontologies.github.io/doco/current/doco.html#).
 
-<p>
-  The associations between concepts are represented with the class <tt>sio:SIO_000897</tt> "association".
-  This association can be annotated with its creator (<tt>pav:createdBy</tt>), that is a <tt>foaf:Agent</tt>;
-  and the software (<tt>dc:Software</tt>) it was created with (<tt>pav:createdWith</tt>). This association
-  is linked to its correspondent <tt>Evidence</tt> with <tt>sio:SIO_000772</tt> "has evidence".
-</p>
+  The associations between concepts are represented with the class ``sio:SIO_000897`` "association".
+  This association can be annotated with its creator (``pav:createdBy``), that is a ``foaf:Agent``;
+  and the software (``dc:Software``) it was created with (``pav:createdWith``). This association
+  is linked to its correspondent ``Evidence`` with ``sio:SIO_000772`` "has evidence".
 
-<p>
-  The class <tt>Evidence</tt> is a subclass of <tt>obo:ECO_0000000</tt> "evidence". Two subclasses of "evidence"
+  The class ``Evidence`` is a subclass of ``obo:ECO_0000000`` "evidence". Two subclasses of "evidence"
   are highlighted, "computational inference" and "documented statement evidence". Evidences
-  can be annotated optionally with a confidence score (<tt>score</tt>), date of creation (<tt>pav:createdOn</tt>)
-  and update (<tt>pav:lasUpdatedOn</tt>), and version (<tt>pav:version</tt>). The provenance of the evidence
-  can be indicated with <tt>pav:derivedFrom</tt>.
-</p>
+  can be annotated optionally with a confidence score (``score``), date of creation (``pav:createdOn``)
+  and update (``pav:lasUpdatedOn``), and version (``pav:version``). The provenance of the evidence
+  can be indicated with ``pav:derivedFrom``.
 
-<p>
   The use case for which this ontology is implemented consist in extracting evidences of
   associations between biomedical concepts from texts – more exactly, from paragraphs.
-  For that reason, the class <tt>doco:Paragraph</tt> is reused. To add more information to where
-  the paragraphs come form and where can they be found, the class <tt>fabio:Expression</tt> is
+  For that reason, the class ``doco:Paragraph`` is reused. To add more information to where
+  the paragraphs come form and where can they be found, the class ``fabio:Expression`` is
   reused.
-</p>
+
+</span>
