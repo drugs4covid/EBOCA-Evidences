@@ -16,7 +16,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:resource="http://semanticscience.org/resource/"
      xmlns:Thesaurus="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#">
-    <owl:Ontology rdf:about="https://w3id.org/def/eboca-evidences#">
+    <owl:Ontology rdf:about="https://w3id.org/eboca/evidences#">
         <dc:publisher>http://www.oeg-upm.net</dc:publisher>
         <dc:title>Evidences and Provenance of Associations Between Concepts (EBOCA Evidences)</dc:title>
         <terms:contributor rdf:resource="http://purl.org/net/mpoveda"/>
@@ -25,7 +25,7 @@
         <terms:created>2022-05-20</terms:created>
         <terms:creator>http://www.oeg-upm.net</terms:creator>
         <terms:description xml:lang="en">This ontology aims to model the evidences and provenance of associations between concepts</terms:description>
-        <vann:modified>2022-05-24</vann:modified>
+        <vann:modified>2022-06-06</vann:modified>
         <vann:preferredNamespaceUri rdf:resource="https://w3id.org/def/eboca"/>
         <rdfs:seeAlso>http://drugs4covid.oeg-upm.net</rdfs:seeAlso>
         <owl:versionInfo>v0.1.0</owl:versionInfo>
@@ -976,19 +976,19 @@ This property is normally used in a functional way, although PAV does not formal
     
 
 
-    <!-- https://w3id.org/def/eboca-evidences#score -->
+    <!-- https://w3id.org/eboca/evidences#score -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/eboca-evidences#score">
-        <rdfs:domain rdf:resource="https://w3id.org/def/eboca-evidences#Evidence"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eboca/evidences#score">
+        <rdfs:domain rdf:resource="https://w3id.org/eboca/evidences#Evidence"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label>score</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/def/eboca-evidences#section -->
+    <!-- https://w3id.org/eboca/evidences#section -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/eboca-evidences#section">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eboca/evidences#section">
         <rdfs:domain rdf:resource="http://purl.org/spar/doco/Paragraph"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>section</rdfs:label>
@@ -996,9 +996,9 @@ This property is normally used in a functional way, although PAV does not formal
     
 
 
-    <!-- https://w3id.org/def/eboca-evidences#text -->
+    <!-- https://w3id.org/eboca/evidences#text -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/eboca-evidences#text">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eboca/evidences#text">
         <rdfs:domain rdf:resource="http://purl.org/spar/doco/Paragraph"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>text</rdfs:label>
@@ -1021,6 +1021,7 @@ This property is normally used in a functional way, although PAV does not formal
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECO_0000000">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://purl.org/spar/fabio/Expression"/>
         <metadata:treeView rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A type of information that is used to support an assertion.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eco</oboInOwl:hasOBONamespace>
@@ -1185,9 +1186,9 @@ computationally derived.</owl:annotatedTarget>
     
 
 
-    <!-- https://w3id.org/def/eboca-evidences#Evidence -->
+    <!-- https://w3id.org/eboca/evidences#Evidence -->
 
-    <owl:Class rdf:about="https://w3id.org/def/eboca-evidences#Evidence">
+    <owl:Class rdf:about="https://w3id.org/eboca/evidences#Evidence">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECO_0000000"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A type of information that is used to support an assertion.</rdfs:comment>
         <rdfs:label>evidence</rdfs:label>
