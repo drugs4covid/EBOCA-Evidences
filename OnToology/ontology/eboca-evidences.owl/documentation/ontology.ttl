@@ -1,24 +1,24 @@
-@prefix : <https://w3id.org/def/eboca-evidences#> .
+@prefix : <https://w3id.org/eboca/evidences#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/def/eboca-evidences#> .
+@base <https://w3id.org/eboca/evidences#> .
 
-<https://w3id.org/def/eboca-evidences#> rdf:type owl:Ontology ;
-                                         <http://purl.org/dc/elements/1.1/publisher> "http://www.oeg-upm.net" ;
-                                         <http://purl.org/dc/elements/1.1/title> "Evidences and Provenance of Associations Between Concepts (EBOCA Evidences)" ;
-                                         <http://purl.org/dc/terms/contributor> <http://purl.org/net/mpoveda> ,
-                                                                                "Ana Iglesias Molina (Ontology Engineering Group)" ,
-                                                                                "Carlos Badenes Olmedo (Ontology Engineering Group)" ;
-                                         <http://purl.org/dc/terms/created> "2022-05-20" ;
-                                         <http://purl.org/dc/terms/creator> "http://www.oeg-upm.net" ;
-                                         <http://purl.org/dc/terms/description> "This ontology aims to model the evidences and provenance of associations between concepts"@en ;
-                                         <http://purl.org/vocab/vann/modified> "2022-05-24" ;
-                                         <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/def/eboca> ;
-                                         rdfs:seeAlso "http://drugs4covid.oeg-upm.net" ;
-                                         owl:versionInfo "0.1.0" .
+<https://w3id.org/eboca/evidences#> rdf:type owl:Ontology ;
+                                     <http://purl.org/dc/elements/1.1/publisher> "http://www.oeg-upm.net" ;
+                                     <http://purl.org/dc/elements/1.1/title> "Evidences and Provenance of Associations Between Concepts (EBOCA Evidences)" ;
+                                     <http://purl.org/dc/terms/contributor> <http://purl.org/net/mpoveda> ,
+                                                                            "Ana Iglesias Molina (Ontology Engineering Group)" ,
+                                                                            "Carlos Badenes Olmedo (Ontology Engineering Group)" ;
+                                     <http://purl.org/dc/terms/created> "2022-05-20" ;
+                                     <http://purl.org/dc/terms/creator> "http://www.oeg-upm.net" ;
+                                     <http://purl.org/dc/terms/description> "This ontology aims to model the evidences and provenance of associations between concepts"@en ;
+                                     <http://purl.org/vocab/vann/modified> "2022-06-06" ;
+                                     <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/def/eboca> ;
+                                     rdfs:seeAlso "http://drugs4covid.oeg-upm.net" ;
+                                     owl:versionInfo "v0.1.0" .
 
 #################################################################
 #    Annotation properties
@@ -802,6 +802,11 @@ Details about who performed the derivation (e.g. who did the refining or modific
 #    Data properties
 #################################################################
 
+###  http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> rdf:type owl:DatatypeProperty ;
+                                      rdfs:range rdfs:Literal .
+
+
 ###  http://purl.org/pav/createdOn
 <http://purl.org/pav/createdOn> rdf:type owl:DatatypeProperty ;
                                 rdfs:range xsd:dateTime ;
@@ -842,21 +847,21 @@ This property is normally used in a functional way, although PAV does not formal
                               rdfs:seeAlso <http://purl.org/pav/previousVersion> .
 
 
-###  https://w3id.org/def/eboca-evidences#score
+###  https://w3id.org/eboca/evidences#score
 :score rdf:type owl:DatatypeProperty ;
        rdfs:domain :Evidence ;
        rdfs:range xsd:float ;
        rdfs:label "score" .
 
 
-###  https://w3id.org/def/eboca-evidences#section
+###  https://w3id.org/eboca/evidences#section
 :section rdf:type owl:DatatypeProperty ;
          rdfs:domain <http://purl.org/spar/doco/Paragraph> ;
          rdfs:range xsd:string ;
          rdfs:label "section" .
 
 
-###  https://w3id.org/def/eboca-evidences#text
+###  https://w3id.org/eboca/evidences#text
 :text rdf:type owl:DatatypeProperty ;
       rdfs:domain <http://purl.org/spar/doco/Paragraph> ;
       rdfs:range xsd:string ;
@@ -870,6 +875,7 @@ This property is normally used in a functional way, although PAV does not formal
 ###  http://purl.obolibrary.org/obo/ECO_0000000
 <http://purl.obolibrary.org/obo/ECO_0000000> rdf:type owl:Class ;
                                              rdfs:subClassOf owl:Thing ;
+                                             owl:disjointWith <http://purl.org/spar/fabio/Expression> ;
                                              <http://data.bioontology.org/metadata/treeView> owl:Thing ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "A type of information that is used to support an assertion." ;
                                              <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> "eco" ;
@@ -1010,9 +1016,10 @@ computationally derived.""" ;
                                     rdfs:label "Agent" .
 
 
-###  https://w3id.org/def/eboca-evidences#Evidence
+###  https://w3id.org/eboca/evidences#Evidence
 :Evidence rdf:type owl:Class ;
           rdfs:subClassOf <http://purl.obolibrary.org/obo/ECO_0000000> ;
+          rdfs:comment "A type of information that is used to support an assertion." ;
           rdfs:label "evidence" .
 
 
