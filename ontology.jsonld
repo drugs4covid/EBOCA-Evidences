@@ -1458,6 +1458,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://purl.org/spar/fabio/Expression"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "ECO:0000000"
   } ]
@@ -1631,6 +1634,12 @@
 }, {
   "@id" : "http://purl.org/dc/terms/description",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
 }, {
   "@id" : "http://purl.org/pav/createdBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
@@ -1876,7 +1885,7 @@
     "@value" : "Agent"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/eboca-evidences#",
+  "@id" : "https://w3id.org/eboca/evidences#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/publisher" : [ {
     "@value" : "http://www.oeg-upm.net"
@@ -1902,7 +1911,7 @@
     "@value" : "This ontology aims to model the evidences and provenance of associations between concepts"
   } ],
   "http://purl.org/vocab/vann/modified" : [ {
-    "@value" : "2022-05-24"
+    "@value" : "2022-06-06"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
     "@id" : "https://w3id.org/def/eboca"
@@ -1911,11 +1920,14 @@
     "@value" : "http://drugs4covid.oeg-upm.net"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.1.0"
+    "@value" : "v0.1.0"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/eboca-evidences#Evidence",
+  "@id" : "https://w3id.org/eboca/evidences#Evidence",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A type of information that is used to support an assertion."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "evidence"
   } ],
@@ -1923,10 +1935,10 @@
     "@id" : "http://purl.obolibrary.org/obo/ECO_0000000"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/eboca-evidences#score",
+  "@id" : "https://w3id.org/eboca/evidences#score",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/eboca-evidences#Evidence"
+    "@id" : "https://w3id.org/eboca/evidences#Evidence"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "score"
@@ -1935,7 +1947,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/eboca-evidences#section",
+  "@id" : "https://w3id.org/eboca/evidences#section",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/spar/doco/Paragraph"
@@ -1947,7 +1959,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/eboca-evidences#text",
+  "@id" : "https://w3id.org/eboca/evidences#text",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/spar/doco/Paragraph"
