@@ -1,0 +1,244 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://example.org/ns#Test1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Evidence score float"
+  } ]
+}, {
+  "@id" : "http://example.org/ns#Test10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "ECO_0007672 subClassOf ECO_0000000"
+  } ]
+}, {
+  "@id" : "http://example.org/ns#Test11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Expression part Paragraph"
+  } ]
+}, {
+  "@id" : "http://example.org/ns#Test12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "SIO_000897 SIO_000772 Evidence"
+  } ]
+}, {
+  "@id" : "http://example.org/ns#Test13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Evidence derivedFrom Paragraph"
+  } ]
+}, {
+  "@id" : "http://example.org/ns#Test14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Evidence score float"
+  } ]
+}, {
+  "@id" : "http://example.org/ns#Test15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Evidence lastUpdateOn dateTime"
+  } ]
+}, {
+  "@id" : "http://example.org/ns#Test16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Evidence createdOn dateTime"
+  } ]
+}, {
+  "@id" : "http://example.org/ns#Test17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Paragraph identifier Literal"
+  } ]
+}, {
+  "@id" : "http://example.org/ns#Test18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Expression identifier Literal"
+  } ]
+}, {
+  "@id" : "http://example.org/ns#Test19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "sio:SIO_000897 pav:createdWith dc:Software"
+  } ]
+}, {
+  "@id" : "http://example.org/ns#Test2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Evidence lastUpdateOn dateTime"
+  } ]
+}, {
+  "@id" : "http://example.org/ns#Test20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "sio:SIO_000897 sio:SIO000772 Evidence"
+  } ]
+}, {
+  "@id" : "http://example.org/ns#Test21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "ECO_0006151 subClassOf ECO_0000000"
+  } ]
+}, {
+  "@id" : "http://example.org/ns#Test22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Evidence subClassOf ECO_0000000"
+  } ]
+}, {
+  "@id" : "http://example.org/ns#Test23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "ECO_0007672 subClassOf ECO_0000000"
+  } ]
+}, {
+  "@id" : "http://example.org/ns#Test24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Expression part Paragraph"
+  } ]
+}, {
+  "@id" : "http://example.org/ns#Test25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "SIO_000897 SIO_000772 Evidence"
+  } ]
+}, {
+  "@id" : "http://example.org/ns#Test26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Evidence derivedFrom Paragraph"
+  } ]
+}, {
+  "@id" : "http://example.org/ns#Test3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Evidence createdOn dateTime"
+  } ]
+}, {
+  "@id" : "http://example.org/ns#Test4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Paragraph identifier Literal"
+  } ]
+}, {
+  "@id" : "http://example.org/ns#Test5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Expression identifier Literal"
+  } ]
+}, {
+  "@id" : "http://example.org/ns#Test6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "SIO_000897 createdWith Software"
+  } ]
+}, {
+  "@id" : "http://example.org/ns#Test7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "SIO_000897 SIO000772 Evidence"
+  } ]
+}, {
+  "@id" : "http://example.org/ns#Test8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "ECO_0006151 subClassOf ECO_0000000"
+  } ]
+}, {
+  "@id" : "http://example.org/ns#Test9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Evidence subClassOf ECO_0000000"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#TestCaseDesign",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#desiredBehaviour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

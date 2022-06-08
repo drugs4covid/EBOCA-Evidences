@@ -1,16 +1,16 @@
-<https://w3id.org/def/eboca-evidences#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/def/eboca-evidences#> <http://purl.org/dc/elements/1.1/publisher> "http://www.oeg-upm.net" .
-<https://w3id.org/def/eboca-evidences#> <http://purl.org/dc/elements/1.1/title> "Evidences and Provenance of Associations Between Concepts (EBOCA Evidences)" .
-<https://w3id.org/def/eboca-evidences#> <http://purl.org/dc/terms/contributor> <http://purl.org/net/mpoveda> .
-<https://w3id.org/def/eboca-evidences#> <http://purl.org/dc/terms/contributor> "Ana Iglesias Molina (Ontology Engineering Group)" .
-<https://w3id.org/def/eboca-evidences#> <http://purl.org/dc/terms/contributor> "Carlos Badenes Olmedo (Ontology Engineering Group)" .
-<https://w3id.org/def/eboca-evidences#> <http://purl.org/dc/terms/created> "2022-05-20" .
-<https://w3id.org/def/eboca-evidences#> <http://purl.org/dc/terms/creator> "http://www.oeg-upm.net" .
-<https://w3id.org/def/eboca-evidences#> <http://purl.org/dc/terms/description> "This ontology aims to model the evidences and provenance of associations between concepts"@en .
-<https://w3id.org/def/eboca-evidences#> <http://purl.org/vocab/vann/modified> "2022-05-24" .
-<https://w3id.org/def/eboca-evidences#> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/def/eboca> .
-<https://w3id.org/def/eboca-evidences#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://drugs4covid.oeg-upm.net" .
-<https://w3id.org/def/eboca-evidences#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0" .
+<https://w3id.org/eboca/evidences#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/eboca/evidences#> <http://purl.org/dc/elements/1.1/publisher> "http://www.oeg-upm.net" .
+<https://w3id.org/eboca/evidences#> <http://purl.org/dc/elements/1.1/title> "Evidences and Provenance of Associations Between Concepts (EBOCA Evidences)" .
+<https://w3id.org/eboca/evidences#> <http://purl.org/dc/terms/contributor> <http://purl.org/net/mpoveda> .
+<https://w3id.org/eboca/evidences#> <http://purl.org/dc/terms/contributor> "Ana Iglesias Molina (Ontology Engineering Group)" .
+<https://w3id.org/eboca/evidences#> <http://purl.org/dc/terms/contributor> "Carlos Badenes Olmedo (Ontology Engineering Group)" .
+<https://w3id.org/eboca/evidences#> <http://purl.org/dc/terms/created> "2022-05-20" .
+<https://w3id.org/eboca/evidences#> <http://purl.org/dc/terms/creator> "http://www.oeg-upm.net" .
+<https://w3id.org/eboca/evidences#> <http://purl.org/dc/terms/description> "This ontology aims to model the evidences and provenance of associations between concepts"@en .
+<https://w3id.org/eboca/evidences#> <http://purl.org/vocab/vann/modified> "2022-06-06" .
+<https://w3id.org/eboca/evidences#> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/def/eboca> .
+<https://w3id.org/eboca/evidences#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://drugs4covid.oeg-upm.net" .
+<https://w3id.org/eboca/evidences#> <http://www.w3.org/2002/07/owl#versionInfo> "v0.1.0" .
 # 
 # 
 # #################################################################
@@ -647,6 +647,10 @@ _:genid44 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378> "NCI" .
 # #################################################################
 # 
 # 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
 # http://purl.org/pav/createdOn
 <http://purl.org/pav/createdOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://purl.org/pav/createdOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -672,23 +676,23 @@ _:genid44 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378> "NCI" .
 <http://purl.org/pav/version> <http://www.w3.org/2000/01/rdf-schema#label> "Version"@en .
 <http://purl.org/pav/version> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/pav/previousVersion> .
 # 
-# https://w3id.org/def/eboca-evidences#score
-<https://w3id.org/def/eboca-evidences#score> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/eboca-evidences#score> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/eboca-evidences#Evidence> .
-<https://w3id.org/def/eboca-evidences#score> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
-<https://w3id.org/def/eboca-evidences#score> <http://www.w3.org/2000/01/rdf-schema#label> "score" .
+# https://w3id.org/eboca/evidences#score
+<https://w3id.org/eboca/evidences#score> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eboca/evidences#score> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eboca/evidences#Evidence> .
+<https://w3id.org/eboca/evidences#score> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/eboca/evidences#score> <http://www.w3.org/2000/01/rdf-schema#label> "score" .
 # 
-# https://w3id.org/def/eboca-evidences#section
-<https://w3id.org/def/eboca-evidences#section> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/eboca-evidences#section> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/doco/Paragraph> .
-<https://w3id.org/def/eboca-evidences#section> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/eboca-evidences#section> <http://www.w3.org/2000/01/rdf-schema#label> "section" .
+# https://w3id.org/eboca/evidences#section
+<https://w3id.org/eboca/evidences#section> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eboca/evidences#section> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/doco/Paragraph> .
+<https://w3id.org/eboca/evidences#section> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eboca/evidences#section> <http://www.w3.org/2000/01/rdf-schema#label> "section" .
 # 
-# https://w3id.org/def/eboca-evidences#text
-<https://w3id.org/def/eboca-evidences#text> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/eboca-evidences#text> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/doco/Paragraph> .
-<https://w3id.org/def/eboca-evidences#text> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/eboca-evidences#text> <http://www.w3.org/2000/01/rdf-schema#label> "text" .
+# https://w3id.org/eboca/evidences#text
+<https://w3id.org/eboca/evidences#text> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eboca/evidences#text> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/doco/Paragraph> .
+<https://w3id.org/eboca/evidences#text> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eboca/evidences#text> <http://www.w3.org/2000/01/rdf-schema#label> "text" .
 # 
 # 
 # 
@@ -702,6 +706,7 @@ _:genid44 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378> "NCI" .
 # http://purl.obolibrary.org/obo/ECO_0000000
 <http://purl.obolibrary.org/obo/ECO_0000000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.obolibrary.org/obo/ECO_0000000> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://purl.obolibrary.org/obo/ECO_0000000> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/spar/fabio/Expression> .
 <http://purl.obolibrary.org/obo/ECO_0000000> <http://data.bioontology.org/metadata/treeView> <http://www.w3.org/2002/07/owl#Thing> .
 <http://purl.obolibrary.org/obo/ECO_0000000> <http://purl.obolibrary.org/obo/IAO_0000115> "A type of information that is used to support an assertion." .
 <http://purl.obolibrary.org/obo/ECO_0000000> <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> "eco" .
@@ -820,9 +825,10 @@ _:genid49 <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ECO:RCT" .
 <http://xmlns.com/foaf/spec/#Agent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://xmlns.com/foaf/" .
 <http://xmlns.com/foaf/spec/#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent" .
 # 
-# https://w3id.org/def/eboca-evidences#Evidence
-<https://w3id.org/def/eboca-evidences#Evidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/eboca-evidences#Evidence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/ECO_0000000> .
-<https://w3id.org/def/eboca-evidences#Evidence> <http://www.w3.org/2000/01/rdf-schema#label> "evidence" .
+# https://w3id.org/eboca/evidences#Evidence
+<https://w3id.org/eboca/evidences#Evidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eboca/evidences#Evidence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/ECO_0000000> .
+<https://w3id.org/eboca/evidences#Evidence> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of information that is used to support an assertion." .
+<https://w3id.org/eboca/evidences#Evidence> <http://www.w3.org/2000/01/rdf-schema#label> "evidence" .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
