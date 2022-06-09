@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/def/eboca-evidences#"
-     xml:base="https://w3id.org/def/eboca-evidences"
+<rdf:RDF xmlns="https://w3id.org/eboca/evidences#"
+     xml:base="https://w3id.org/eboca/evidences"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -11,23 +11,26 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:ebocaev="https://w3id.org/eboca/evidences#"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:metadata="http://data.bioontology.org/metadata/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:resource="http://semanticscience.org/resource/"
      xmlns:Thesaurus="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#">
     <owl:Ontology rdf:about="https://w3id.org/eboca/evidences#">
-        <dc:publisher>http://www.oeg-upm.net</dc:publisher>
+        <dc:publisher rdf:resource="https://oeg.fi.upm.es/"/>
         <dc:title>Evidences and Provenance of Associations Between Concepts (EBOCA Evidences)</dc:title>
         <terms:contributor rdf:resource="http://purl.org/net/mpoveda"/>
         <terms:contributor>Ana Iglesias Molina (Ontology Engineering Group)</terms:contributor>
         <terms:contributor>Carlos Badenes Olmedo (Ontology Engineering Group)</terms:contributor>
         <terms:created>2022-05-20</terms:created>
-        <terms:creator>http://www.oeg-upm.net</terms:creator>
+        <terms:creator rdf:resource="https://oeg.fi.upm.es/"/>
         <terms:description xml:lang="en">This ontology aims to model the evidences and provenance of associations between concepts</terms:description>
-        <vann:modified>2022-06-06</vann:modified>
-        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/def/eboca"/>
-        <rdfs:seeAlso>http://drugs4covid.oeg-upm.net</rdfs:seeAlso>
+        <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by-nc-sa4.0"/>
+        <vann:modified>2022-06-09</vann:modified>
+        <vann:preferredNamespacePrefix>ebocaev</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/eboca/evidences#"/>
+        <rdfs:seeAlso rdf:resource="https://drugs4covid.oeg.fi.upm.es/"/>
         <owl:versionInfo>v0.1.0</owl:versionInfo>
     </owl:Ontology>
     
@@ -144,7 +147,6 @@
         <Thesaurus:P97>A property that represents a description of the sort of thing or category to which a concept belongs in the context of the UMLS semantic network.</Thesaurus:P97>
         <Thesaurus:P98>In general, applying semantic types aids in allowing users (or computer programs) to draw conclusions about concepts by virtue of the categories to which they have been assigned.  We use a set of semantic types developed for the UMLS Metathesaurus. There are currently 134 semantic types in the UMLS.</Thesaurus:P98>
         <rdfs:label>Semantic_Type</rdfs:label>
-        <rdfs:range rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Semantic_Type-enum"/>
     </owl:AnnotationProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P106"/>
@@ -280,7 +282,6 @@
         <Thesaurus:P90>Contributing_Source</Thesaurus:P90>
         <Thesaurus:P97>A property is used to indicate when a non-EVS entity has contributed to, and has a stake in, a concept. This is used where such entities, within or outside NCI, have indicated the need to be able to track their own concepts. A single concept can have multiple instances of this property if multiple entities have such a defined stake.</Thesaurus:P97>
         <rdfs:label>Contributing_Source</rdfs:label>
-        <rdfs:range rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Contributing_Source-enum"/>
     </owl:AnnotationProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P322"/>
@@ -308,7 +309,6 @@
         <Thesaurus:P90>ALT_DEFINITION</Thesaurus:P90>
         <Thesaurus:P97>A property representing the English language definition of a concept from a source other than NCI.</Thesaurus:P97>
         <rdfs:label>ALT_DEFINITION</rdfs:label>
-        <rdfs:range rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#textArea"/>
     </owl:AnnotationProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P325"/>
@@ -398,7 +398,6 @@
         <Thesaurus:P90>Maps_To</Thesaurus:P90>
         <Thesaurus:P97>A property representing that a term in another terminology has been mapped to a term in NCIt and describes the relationship between the mapped terms.</Thesaurus:P97>
         <rdfs:label>Maps_To</rdfs:label>
-        <rdfs:range rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#textArea"/>
     </owl:AnnotationProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P375"/>
@@ -426,7 +425,6 @@
         <Thesaurus:P97>A property representing the organization that is the supplier or owner of each DEFINITION or ALT_DEFINITION associated with a concept.</Thesaurus:P97>
         <Thesaurus:required rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Thesaurus:required>
         <rdfs:label>Definition Source</rdfs:label>
-        <rdfs:range rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#def-source-enum"/>
     </owl:AnnotationProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378"/>
@@ -453,7 +451,6 @@
         <Thesaurus:P97>A property representing a two or three character abbreviation that indicates the nature of each FULL_SYN term associated with a concept. (e.g., PT=Preferred Term; SY=Synonym)</Thesaurus:P97>
         <Thesaurus:required rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Thesaurus:required>
         <rdfs:label>Term Type</rdfs:label>
-        <rdfs:range rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#term-group-enum"/>
     </owl:AnnotationProperty>
     
 
@@ -468,7 +465,6 @@
         <Thesaurus:P97>A property representing the organization that is the supplier or owner of each FULL_SYN term.</Thesaurus:P97>
         <Thesaurus:required rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Thesaurus:required>
         <rdfs:label>Term Source</rdfs:label>
-        <rdfs:range rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#term-source-enum"/>
     </owl:AnnotationProperty>
     
 
@@ -517,7 +513,6 @@
         <Thesaurus:P97>A property representing the relationship of the NCI Thesaurus (NCIt) concept to the term from the outside source. There are four possibilities: 1) Has Synonym: the two terms are synonymous; 2) Broader Than: the NCIt concept is broader than the mapped (target) term; 3) Narrower Than: the NCIt concept is narrower than the mapped (target) term; 4) Related To: the NCIt concept is somehow related to the mapped (target) term.</Thesaurus:P97>
         <Thesaurus:required rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Thesaurus:required>
         <rdfs:label>Relationship_to_Target</rdfs:label>
-        <rdfs:range rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Relationshipt_to_Target-enum"/>
     </owl:AnnotationProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P393"/>
@@ -537,7 +532,6 @@
         <Thesaurus:P97>A property representing the term type designation in the mapped (target) database.</Thesaurus:P97>
         <Thesaurus:required rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Thesaurus:required>
         <rdfs:label>Target_Term_Type</rdfs:label>
-        <rdfs:range rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Target_Term_Type-enum"/>
     </owl:AnnotationProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P394"/>
@@ -578,7 +572,6 @@
         <Thesaurus:P97>A property representing the name of the terminology to which the NCI Thesaurus term is being mapped.</Thesaurus:P97>
         <Thesaurus:required rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Thesaurus:required>
         <rdfs:label>Target_Terminology</rdfs:label>
-        <rdfs:range rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Target_Terminology-enum"/>
     </owl:AnnotationProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P396"/>
@@ -600,7 +593,6 @@
         <Thesaurus:P90>Synonym with Source Data</Thesaurus:P90>
         <Thesaurus:P97>A property representing a fully qualified synonym, contains the string, term type, source, and an optional source code if appropriate. Each subfield is deliniated to facilitate interpretation by software.</Thesaurus:P97>
         <rdfs:label>FULL_SYN</rdfs:label>
-        <rdfs:range rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#textArea"/>
     </owl:AnnotationProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
@@ -635,7 +627,6 @@
         <Thesaurus:P90>DEFINITION</Thesaurus:P90>
         <Thesaurus:P97>A property representing the English language definitions of what NCI means by the concept. They may also include information about the definition&apos;s source and attribution in a form that can easily be interpreted by software.</Thesaurus:P97>
         <rdfs:label>DEFINITION</rdfs:label>
-        <rdfs:range rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#textArea"/>
     </owl:AnnotationProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97"/>
@@ -703,7 +694,9 @@
 
     <!-- http://purl.org/dc/elements/1.1/identifier -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier">
+        <rdfs:label>identifier</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -743,6 +736,12 @@
     
 
 
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
     <!-- http://purl.org/vocab/vann/modified -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/modified"/>
@@ -767,18 +766,6 @@
     
 
 
-    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-    
-
-
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -800,12 +787,6 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
     
 
 
@@ -1032,10 +1013,10 @@ This property is normally used in a functional way, although PAV does not formal
         <owl:disjointWith rdf:resource="http://purl.org/spar/fabio/Expression"/>
         <metadata:treeView rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A type of information that is used to support an assertion.</obo:IAO_0000115>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECO:0000000</dc:identifier>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eco</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">evidence code</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">evidence_code</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECO:0000000</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">evidence</rdfs:label>
         <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECO:0000000</skos:notation>
     </owl:Class>
@@ -1054,10 +1035,8 @@ This property is normally used in a functional way, although PAV does not formal
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECO_0000000"/>
         <metadata:treeView rdf:resource="http://purl.obolibrary.org/obo/ECO_0000000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A type of evidence where an assertion is derived from another assertion via logical inference or some non-logical but rational means.</obo:IAO_0000115>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mchibucos</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-07-14T11:19:37Z</oboInOwl:creation_date>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECO:0000361</dc:identifier>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eco</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECO:0000361</oboInOwl:id>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inference is the process of deriving logical conclusions from premises known or assumed to be true, or alternatively, arriving at conclusions via some non-logical means of observation of patterns of facts, which can result in identifying new meanings and contexts for understanding. Given the evidence provided by a set of premises, deductive reasoning involves drawing conclusions that necessarily follow, i.e. are certain, whereas inductive reasoning generates conclusions that are likely to be, but are not necessarily, true.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inferential evidence</rdfs:label>
         <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECO:0000361</skos:notation>
@@ -1080,11 +1059,9 @@ This property is normally used in a functional way, although PAV does not formal
         <metadata:treeView rdf:resource="http://purl.obolibrary.org/obo/ECO_0007672"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A type of inferential evidence based on a computationally derived unary inference or an inference chain in which at least one step is 
 computationally derived.</obo:IAO_0000115>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mchibucos</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-07-14T11:24:27Z</oboInOwl:creation_date>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECO:0000362</dc:identifier>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">evidence based on computational logical inference</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eco</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECO:0000362</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">computational inference</rdfs:label>
         <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECO:0000362</skos:notation>
     </owl:Class>
@@ -1105,9 +1082,8 @@ computationally derived.</owl:annotatedTarget>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECO_0000000"/>
         <metadata:treeView rdf:resource="http://purl.obolibrary.org/obo/ECO_0000000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A type of evidence in which information is recorded in some documentation system, for example, but not limited to a publication, survey, or medical record.</obo:IAO_0000115>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snadendla</oboInOwl:created_by>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECO:0006151</dc:identifier>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eco</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECO:0006151</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">documented statement evidence</rdfs:label>
         <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECO:0006151</skos:notation>
     </owl:Class>
@@ -1126,11 +1102,9 @@ computationally derived.</owl:annotatedTarget>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECO_0000000"/>
         <metadata:treeView rdf:resource="http://purl.obolibrary.org/obo/ECO_0000000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A type of evidence in which data are produced, and/or generated, and/or analyzed on a computer.</obo:IAO_0000115>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rctauber</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-12-04T19:31:00Z</oboInOwl:creation_date>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECO:0007672</dc:identifier>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in silico evidence</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eco</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECO:0007672</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">computational evidence</rdfs:label>
         <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECO:0007672</skos:notation>
     </owl:Class>
