@@ -25,6 +25,9 @@
     "subset" : {
       "@id" : "http://semanticscience.org/resource/subset"
     },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
     "hasExactSynonym" : {
       "@id" : "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"
     },
@@ -76,9 +79,6 @@
     "Expression" : {
       "@id" : "http://purl.org/spar/fabio/Expression"
     },
-    "id" : {
-      "@id" : "http://www.geneontology.org/formats/oboInOwl#id"
-    },
     "P384" : {
       "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P384"
     },
@@ -88,18 +88,12 @@
     "P98" : {
       "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P98"
     },
-    "created_by" : {
-      "@id" : "http://www.geneontology.org/formats/oboInOwl#created_by"
-    },
     "P378" : {
       "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378"
     },
     "createdBy" : {
       "@id" : "http://purl.org/pav/createdBy",
       "@type" : "@id"
-    },
-    "creation_date" : {
-      "@id" : "http://www.geneontology.org/formats/oboInOwl#creation_date"
     },
     "hasRelatedSynonym" : {
       "@id" : "http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"
