@@ -64,19 +64,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_https://w3id.org/eboca/evidences#Evidence">
+      <node id="nid_ebocaev:Evidence">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="410.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="160.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://w3id.org/eboca/evidences#Evidence</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">ebocaev:Evidence</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf2" source="nid_https://w3id.org/eboca/evidences#Evidence" target="nid_obo:ECO_0000000">
+    <edge id="eid_rdfs:subClassOf2" source="nid_ebocaev:Evidence" target="nid_obo:ECO_0000000">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />

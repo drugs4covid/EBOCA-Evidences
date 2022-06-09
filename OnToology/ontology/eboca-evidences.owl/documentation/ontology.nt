@@ -1,15 +1,17 @@
 <https://w3id.org/eboca/evidences#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/eboca/evidences#> <http://purl.org/dc/elements/1.1/publisher> "http://www.oeg-upm.net" .
+<https://w3id.org/eboca/evidences#> <http://purl.org/dc/elements/1.1/publisher> <https://oeg.fi.upm.es/> .
 <https://w3id.org/eboca/evidences#> <http://purl.org/dc/elements/1.1/title> "Evidences and Provenance of Associations Between Concepts (EBOCA Evidences)" .
 <https://w3id.org/eboca/evidences#> <http://purl.org/dc/terms/contributor> <http://purl.org/net/mpoveda> .
 <https://w3id.org/eboca/evidences#> <http://purl.org/dc/terms/contributor> "Ana Iglesias Molina (Ontology Engineering Group)" .
 <https://w3id.org/eboca/evidences#> <http://purl.org/dc/terms/contributor> "Carlos Badenes Olmedo (Ontology Engineering Group)" .
 <https://w3id.org/eboca/evidences#> <http://purl.org/dc/terms/created> "2022-05-20" .
-<https://w3id.org/eboca/evidences#> <http://purl.org/dc/terms/creator> "http://www.oeg-upm.net" .
+<https://w3id.org/eboca/evidences#> <http://purl.org/dc/terms/creator> <https://oeg.fi.upm.es/> .
 <https://w3id.org/eboca/evidences#> <http://purl.org/dc/terms/description> "This ontology aims to model the evidences and provenance of associations between concepts"@en .
-<https://w3id.org/eboca/evidences#> <http://purl.org/vocab/vann/modified> "2022-06-06" .
-<https://w3id.org/eboca/evidences#> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/def/eboca> .
-<https://w3id.org/eboca/evidences#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://drugs4covid.oeg-upm.net" .
+<https://w3id.org/eboca/evidences#> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by-nc-sa4.0> .
+<https://w3id.org/eboca/evidences#> <http://purl.org/vocab/vann/modified> "2022-06-09" .
+<https://w3id.org/eboca/evidences#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ebocaev" .
+<https://w3id.org/eboca/evidences#> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/eboca/evidences#> .
+<https://w3id.org/eboca/evidences#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://drugs4covid.oeg.fi.upm.es/> .
 <https://w3id.org/eboca/evidences#> <http://www.w3.org/2002/07/owl#versionInfo> "v0.1.0" .
 # 
 # 
@@ -98,7 +100,6 @@ _:genid6 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378> "NCI" .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P106> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97> "A property that represents a description of the sort of thing or category to which a concept belongs in the context of the UMLS semantic network." .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P106> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P98> "In general, applying semantic types aids in allowing users (or computer programs) to draw conclusions about concepts by virtue of the categories to which they have been assigned.  We use a set of semantic types developed for the UMLS Metathesaurus. There are currently 134 semantic types in the UMLS." .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P106> <http://www.w3.org/2000/01/rdf-schema#label> "Semantic_Type" .
-<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P106> <http://www.w3.org/2000/01/rdf-schema#range> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Semantic_Type-enum> .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
 _:genid7 <http://www.w3.org/2002/07/owl#annotatedSource> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P106> .
 _:genid7 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90> .
@@ -207,7 +208,6 @@ _:genid17 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378> "NCI" .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P322> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90> "Contributing_Source" .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P322> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97> "A property is used to indicate when a non-EVS entity has contributed to, and has a stake in, a concept. This is used where such entities, within or outside NCI, have indicated the need to be able to track their own concepts. A single concept can have multiple instances of this property if multiple entities have such a defined stake." .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P322> <http://www.w3.org/2000/01/rdf-schema#label> "Contributing_Source" .
-<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P322> <http://www.w3.org/2000/01/rdf-schema#range> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Contributing_Source-enum> .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
 _:genid18 <http://www.w3.org/2002/07/owl#annotatedSource> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P322> .
 _:genid18 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90> .
@@ -229,7 +229,6 @@ _:genid19 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378> "NCI" .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P325> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90> "ALT_DEFINITION" .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P325> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97> "A property representing the English language definition of a concept from a source other than NCI." .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P325> <http://www.w3.org/2000/01/rdf-schema#label> "ALT_DEFINITION" .
-<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P325> <http://www.w3.org/2000/01/rdf-schema#range> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#textArea> .
 _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
 _:genid20 <http://www.w3.org/2002/07/owl#annotatedSource> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P325> .
 _:genid20 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90> .
@@ -300,7 +299,6 @@ _:genid26 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378> "NCI" .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P375> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90> "Maps_To" .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P375> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97> "A property representing that a term in another terminology has been mapped to a term in NCIt and describes the relationship between the mapped terms." .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P375> <http://www.w3.org/2000/01/rdf-schema#label> "Maps_To" .
-<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P375> <http://www.w3.org/2000/01/rdf-schema#range> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#textArea> .
 _:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
 _:genid27 <http://www.w3.org/2002/07/owl#annotatedSource> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P375> .
 _:genid27 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90> .
@@ -322,7 +320,6 @@ _:genid28 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378> "NCI" .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97> "A property representing the organization that is the supplier or owner of each DEFINITION or ALT_DEFINITION associated with a concept." .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#required> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378> <http://www.w3.org/2000/01/rdf-schema#label> "Definition Source" .
-<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378> <http://www.w3.org/2000/01/rdf-schema#range> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#def-source-enum> .
 _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
 _:genid29 <http://www.w3.org/2002/07/owl#annotatedSource> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378> .
 _:genid29 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90> .
@@ -343,7 +340,6 @@ _:genid30 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378> "NCI" .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P383> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97> "A property representing a two or three character abbreviation that indicates the nature of each FULL_SYN term associated with a concept. (e.g., PT=Preferred Term; SY=Synonym)" .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P383> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#required> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P383> <http://www.w3.org/2000/01/rdf-schema#label> "Term Type" .
-<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P383> <http://www.w3.org/2000/01/rdf-schema#range> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#term-group-enum> .
 # 
 # http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P384
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P384> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -354,7 +350,6 @@ _:genid30 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378> "NCI" .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P384> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97> "A property representing the organization that is the supplier or owner of each FULL_SYN term." .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P384> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#required> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P384> <http://www.w3.org/2000/01/rdf-schema#label> "Term Source" .
-<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P384> <http://www.w3.org/2000/01/rdf-schema#range> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#term-source-enum> .
 # 
 # http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P385
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P385> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -392,7 +387,6 @@ _:genid33 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378> "NCI" .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P393> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97> "A property representing the relationship of the NCI Thesaurus (NCIt) concept to the term from the outside source. There are four possibilities: 1) Has Synonym: the two terms are synonymous; 2) Broader Than: the NCIt concept is broader than the mapped (target) term; 3) Narrower Than: the NCIt concept is narrower than the mapped (target) term; 4) Related To: the NCIt concept is somehow related to the mapped (target) term." .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P393> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#required> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P393> <http://www.w3.org/2000/01/rdf-schema#label> "Relationship_to_Target" .
-<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P393> <http://www.w3.org/2000/01/rdf-schema#range> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Relationshipt_to_Target-enum> .
 _:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
 _:genid34 <http://www.w3.org/2002/07/owl#annotatedSource> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P393> .
 _:genid34 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97> .
@@ -407,7 +401,6 @@ _:genid34 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378> "NCI" .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P394> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97> "A property representing the term type designation in the mapped (target) database." .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P394> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#required> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P394> <http://www.w3.org/2000/01/rdf-schema#label> "Target_Term_Type" .
-<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P394> <http://www.w3.org/2000/01/rdf-schema#range> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Target_Term_Type-enum> .
 _:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
 _:genid35 <http://www.w3.org/2002/07/owl#annotatedSource> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P394> .
 _:genid35 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97> .
@@ -438,7 +431,6 @@ _:genid36 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378> "NCI" .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P396> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97> "A property representing the name of the terminology to which the NCI Thesaurus term is being mapped." .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P396> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#required> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P396> <http://www.w3.org/2000/01/rdf-schema#label> "Target_Terminology" .
-<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P396> <http://www.w3.org/2000/01/rdf-schema#range> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Target_Terminology-enum> .
 _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
 _:genid37 <http://www.w3.org/2002/07/owl#annotatedSource> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P396> .
 _:genid37 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97> .
@@ -455,7 +447,6 @@ _:genid37 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378> "NCI" .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90> "Synonym with Source Data" .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97> "A property representing a fully qualified synonym, contains the string, term type, source, and an optional source code if appropriate. Each subfield is deliniated to facilitate interpretation by software." .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90> <http://www.w3.org/2000/01/rdf-schema#label> "FULL_SYN" .
-<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90> <http://www.w3.org/2000/01/rdf-schema#range> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#textArea> .
 _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
 _:genid38 <http://www.w3.org/2002/07/owl#annotatedSource> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90> .
 _:genid38 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90> .
@@ -483,7 +474,6 @@ _:genid40 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378> "NCI" .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90> "DEFINITION" .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97> "A property representing the English language definitions of what NCI means by the concept. They may also include information about the definition's source and attribution in a form that can easily be interpreted by software." .
 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97> <http://www.w3.org/2000/01/rdf-schema#label> "DEFINITION" .
-<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97> <http://www.w3.org/2000/01/rdf-schema#range> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#textArea> .
 _:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
 _:genid41 <http://www.w3.org/2002/07/owl#annotatedSource> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97> .
 _:genid41 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90> .
@@ -530,6 +520,7 @@ _:genid44 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378> "NCI" .
 # 
 # http://purl.org/dc/elements/1.1/identifier
 <http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier" .
 # 
 # http://purl.org/dc/elements/1.1/publisher
 <http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -549,6 +540,9 @@ _:genid44 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378> "NCI" .
 # http://purl.org/dc/terms/description
 <http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/vocab/vann/modified
 <http://purl.org/vocab/vann/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -561,12 +555,6 @@ _:genid44 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378> "NCI" .
 # http://semanticscience.org/resource/subset
 <http://semanticscience.org/resource/subset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://www.geneontology.org/formats/oboInOwl#created_by
-<http://www.geneontology.org/formats/oboInOwl#created_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.geneontology.org/formats/oboInOwl#creation_date
-<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
 # http://www.geneontology.org/formats/oboInOwl#hasDbXref
 <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -578,9 +566,6 @@ _:genid44 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378> "NCI" .
 # 
 # http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym
 <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.geneontology.org/formats/oboInOwl#id
-<http://www.geneontology.org/formats/oboInOwl#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.geneontology.org/formats/oboInOwl#inSubset
 <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -709,10 +694,10 @@ _:genid44 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378> "NCI" .
 <http://purl.obolibrary.org/obo/ECO_0000000> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/spar/fabio/Expression> .
 <http://purl.obolibrary.org/obo/ECO_0000000> <http://data.bioontology.org/metadata/treeView> <http://www.w3.org/2002/07/owl#Thing> .
 <http://purl.obolibrary.org/obo/ECO_0000000> <http://purl.obolibrary.org/obo/IAO_0000115> "A type of information that is used to support an assertion." .
+<http://purl.obolibrary.org/obo/ECO_0000000> <http://purl.org/dc/elements/1.1/identifier> "ECO:0000000" .
 <http://purl.obolibrary.org/obo/ECO_0000000> <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> "eco" .
 <http://purl.obolibrary.org/obo/ECO_0000000> <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "evidence code" .
 <http://purl.obolibrary.org/obo/ECO_0000000> <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "evidence_code" .
-<http://purl.obolibrary.org/obo/ECO_0000000> <http://www.geneontology.org/formats/oboInOwl#id> "ECO:0000000" .
 <http://purl.obolibrary.org/obo/ECO_0000000> <http://www.w3.org/2000/01/rdf-schema#label> "evidence" .
 <http://purl.obolibrary.org/obo/ECO_0000000> <http://www.w3.org/2004/02/skos/core#notation> "ECO:0000000" .
 _:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
@@ -726,10 +711,8 @@ _:genid45 <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ECO:MCC" .
 <http://purl.obolibrary.org/obo/ECO_0000361> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/ECO_0000000> .
 <http://purl.obolibrary.org/obo/ECO_0000361> <http://data.bioontology.org/metadata/treeView> <http://purl.obolibrary.org/obo/ECO_0000000> .
 <http://purl.obolibrary.org/obo/ECO_0000361> <http://purl.obolibrary.org/obo/IAO_0000115> "A type of evidence where an assertion is derived from another assertion via logical inference or some non-logical but rational means." .
-<http://purl.obolibrary.org/obo/ECO_0000361> <http://www.geneontology.org/formats/oboInOwl#created_by> "mchibucos" .
-<http://purl.obolibrary.org/obo/ECO_0000361> <http://www.geneontology.org/formats/oboInOwl#creation_date> "2015-07-14T11:19:37Z" .
+<http://purl.obolibrary.org/obo/ECO_0000361> <http://purl.org/dc/elements/1.1/identifier> "ECO:0000361" .
 <http://purl.obolibrary.org/obo/ECO_0000361> <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> "eco" .
-<http://purl.obolibrary.org/obo/ECO_0000361> <http://www.geneontology.org/formats/oboInOwl#id> "ECO:0000361" .
 <http://purl.obolibrary.org/obo/ECO_0000361> <http://www.w3.org/2000/01/rdf-schema#comment> "Inference is the process of deriving logical conclusions from premises known or assumed to be true, or alternatively, arriving at conclusions via some non-logical means of observation of patterns of facts, which can result in identifying new meanings and contexts for understanding. Given the evidence provided by a set of premises, deductive reasoning involves drawing conclusions that necessarily follow, i.e. are certain, whereas inductive reasoning generates conclusions that are likely to be, but are not necessarily, true." .
 <http://purl.obolibrary.org/obo/ECO_0000361> <http://www.w3.org/2000/01/rdf-schema#label> "inferential evidence" .
 <http://purl.obolibrary.org/obo/ECO_0000361> <http://www.w3.org/2004/02/skos/core#notation> "ECO:0000361" .
@@ -746,11 +729,9 @@ _:genid46 <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ECO:MCC" .
 <http://purl.obolibrary.org/obo/ECO_0000362> <http://data.bioontology.org/metadata/treeView> <http://purl.obolibrary.org/obo/ECO_0000361> .
 <http://purl.obolibrary.org/obo/ECO_0000362> <http://data.bioontology.org/metadata/treeView> <http://purl.obolibrary.org/obo/ECO_0007672> .
 <http://purl.obolibrary.org/obo/ECO_0000362> <http://purl.obolibrary.org/obo/IAO_0000115> "A type of inferential evidence based on a computationally derived unary inference or an inference chain in which at least one step is \ncomputationally derived." .
-<http://purl.obolibrary.org/obo/ECO_0000362> <http://www.geneontology.org/formats/oboInOwl#created_by> "mchibucos" .
-<http://purl.obolibrary.org/obo/ECO_0000362> <http://www.geneontology.org/formats/oboInOwl#creation_date> "2015-07-14T11:24:27Z" .
+<http://purl.obolibrary.org/obo/ECO_0000362> <http://purl.org/dc/elements/1.1/identifier> "ECO:0000362" .
 <http://purl.obolibrary.org/obo/ECO_0000362> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "evidence based on computational logical inference" .
 <http://purl.obolibrary.org/obo/ECO_0000362> <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> "eco" .
-<http://purl.obolibrary.org/obo/ECO_0000362> <http://www.geneontology.org/formats/oboInOwl#id> "ECO:0000362" .
 <http://purl.obolibrary.org/obo/ECO_0000362> <http://www.w3.org/2000/01/rdf-schema#label> "computational inference" .
 <http://purl.obolibrary.org/obo/ECO_0000362> <http://www.w3.org/2004/02/skos/core#notation> "ECO:0000362" .
 _:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
@@ -765,9 +746,8 @@ _:genid47 <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:MC" .
 <http://purl.obolibrary.org/obo/ECO_0006151> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/ECO_0000000> .
 <http://purl.obolibrary.org/obo/ECO_0006151> <http://data.bioontology.org/metadata/treeView> <http://purl.obolibrary.org/obo/ECO_0000000> .
 <http://purl.obolibrary.org/obo/ECO_0006151> <http://purl.obolibrary.org/obo/IAO_0000115> "A type of evidence in which information is recorded in some documentation system, for example, but not limited to a publication, survey, or medical record." .
-<http://purl.obolibrary.org/obo/ECO_0006151> <http://www.geneontology.org/formats/oboInOwl#created_by> "snadendla" .
+<http://purl.obolibrary.org/obo/ECO_0006151> <http://purl.org/dc/elements/1.1/identifier> "ECO:0006151" .
 <http://purl.obolibrary.org/obo/ECO_0006151> <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> "eco" .
-<http://purl.obolibrary.org/obo/ECO_0006151> <http://www.geneontology.org/formats/oboInOwl#id> "ECO:0006151" .
 <http://purl.obolibrary.org/obo/ECO_0006151> <http://www.w3.org/2000/01/rdf-schema#label> "documented statement evidence" .
 <http://purl.obolibrary.org/obo/ECO_0006151> <http://www.w3.org/2004/02/skos/core#notation> "ECO:0006151" .
 _:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
@@ -781,11 +761,9 @@ _:genid48 <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ECO:SN" .
 <http://purl.obolibrary.org/obo/ECO_0007672> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/ECO_0000000> .
 <http://purl.obolibrary.org/obo/ECO_0007672> <http://data.bioontology.org/metadata/treeView> <http://purl.obolibrary.org/obo/ECO_0000000> .
 <http://purl.obolibrary.org/obo/ECO_0007672> <http://purl.obolibrary.org/obo/IAO_0000115> "A type of evidence in which data are produced, and/or generated, and/or analyzed on a computer." .
-<http://purl.obolibrary.org/obo/ECO_0007672> <http://www.geneontology.org/formats/oboInOwl#created_by> "rctauber" .
-<http://purl.obolibrary.org/obo/ECO_0007672> <http://www.geneontology.org/formats/oboInOwl#creation_date> "2018-12-04T19:31:00Z" .
+<http://purl.obolibrary.org/obo/ECO_0007672> <http://purl.org/dc/elements/1.1/identifier> "ECO:0007672" .
 <http://purl.obolibrary.org/obo/ECO_0007672> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "in silico evidence" .
 <http://purl.obolibrary.org/obo/ECO_0007672> <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> "eco" .
-<http://purl.obolibrary.org/obo/ECO_0007672> <http://www.geneontology.org/formats/oboInOwl#id> "ECO:0007672" .
 <http://purl.obolibrary.org/obo/ECO_0007672> <http://www.w3.org/2000/01/rdf-schema#label> "computational evidence" .
 <http://purl.obolibrary.org/obo/ECO_0007672> <http://www.w3.org/2004/02/skos/core#notation> "ECO:0007672" .
 _:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
