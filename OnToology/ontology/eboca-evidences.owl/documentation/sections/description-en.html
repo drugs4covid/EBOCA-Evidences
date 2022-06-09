@@ -22,16 +22,18 @@ follows the [Chowlk notation](https://chowlk.linkeddata.es/notation.html).
 </p>
 
 <p>
-  The associations between concepts are represented with the class <tt>sio:SIO_000897</tt> "association".
-  This association can be annotated with its creator (<tt>pav:createdBy</tt>), that is a <tt>foaf:Agent</tt>;
-  and the software (<tt>dc:Software</tt>) it was created with (<tt>pav:createdWith</tt>). This association
-  is linked to its correspondent <tt>Evidence</tt> with <tt>sio:SIO_000772</tt> "has evidence".
+  The associations between concepts are represented with the class <tt>sio:SIO_000897</tt> "association". This association
+  is linked to its correspondent <tt>Evidence</tt> with <tt>sio:SIO_000772</tt> "has evidence". This class is the connection
+  with the <a href="https://w3id.org/eboca/sem-disnet">EBOCA SEM-DISNET module</a>.
 </p>
 
 <p>
   The class <tt>Evidence</tt> is a subclass of <tt>obo:ECO_0000000</tt> "evidence". Two subclasses of "evidence"
-  are highlighted, "computational inference" and "documented statement evidence". Evidences
-  can be annotated optionally with a confidence score (<tt>score</tt>), date of creation (<tt>pav:createdOn</tt>)
+  are highlighted, "computational inference" and "documented statement evidence", to indicate
+  which kind of evidences can be.
+  Evidences can be annotated with their creator (<tt>pav:createdBy</tt>), that is a <tt>foaf:Agent</tt>;
+  and the software (<tt>dc:Software</tt>) it was created with (<tt>pav:createdWith</tt>).
+  Evidences can also be annotated optionally with a confidence score (<tt>score</tt>), date of creation (<tt>pav:createdOn</tt>)
   and update (<tt>pav:lasUpdatedOn</tt>), and version (<tt>pav:version</tt>). The provenance of the evidence
   can be indicated with <tt>pav:derivedFrom</tt>.
 </p>
@@ -41,5 +43,5 @@ follows the [Chowlk notation](https://chowlk.linkeddata.es/notation.html).
   associations between biomedical concepts from texts – more exactly, from paragraphs.
   For that reason, the class <tt>doco:Paragraph</tt> is reused. To add more information to where
   the paragraphs come form and where can they be found, the class <tt>fabio:Expression</tt> is
-  reused.
+  reused, that is able to describe papers among other things.
 </p>
