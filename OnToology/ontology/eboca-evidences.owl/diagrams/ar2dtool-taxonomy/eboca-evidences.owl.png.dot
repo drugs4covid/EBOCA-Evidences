@@ -1,10 +1,10 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "obo:ECO_0000362" "https://w3id.org/eboca/evidences#Evidence" "obo:ECO_0006151" "obo:ECO_0000361" "obo:ECO_0007672" "obo:ECO_0000000" ; /*classes style*/
+node [shape = rectangle, color="black"]; "obo:ECO_0000362" "ebocaev:Evidence" "obo:ECO_0006151" "obo:ECO_0000361" "obo:ECO_0007672" "obo:ECO_0000000" ; /*classes style*/
 	"obo:ECO_0007672" -> "obo:ECO_0000000" [ label = "rdfs:subClassOf" ];
 	"obo:ECO_0006151" -> "obo:ECO_0000000" [ label = "rdfs:subClassOf" ];
-	"https://w3id.org/eboca/evidences#Evidence" -> "obo:ECO_0000000" [ label = "rdfs:subClassOf" ];
+	"ebocaev:Evidence" -> "obo:ECO_0000000" [ label = "rdfs:subClassOf" ];
 	"obo:ECO_0000000" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
 	"obo:ECO_0000362" -> "obo:ECO_0007672" [ label = "rdfs:subClassOf" ];
 	"obo:ECO_0000362" -> "obo:ECO_0000361" [ label = "rdfs:subClassOf" ];

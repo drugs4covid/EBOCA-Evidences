@@ -911,9 +911,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Semantic_Type"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Semantic_Type-enum"
   } ]
 }, {
   "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P107",
@@ -1025,9 +1022,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Contributing_Source"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Contributing_Source-enum"
   } ]
 }, {
   "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P325",
@@ -1052,9 +1046,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "ALT_DEFINITION"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#textArea"
   } ]
 }, {
   "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P366",
@@ -1129,9 +1120,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Maps_To"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#textArea"
   } ]
 }, {
   "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378",
@@ -1157,9 +1145,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Definition Source"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#def-source-enum"
   } ]
 }, {
   "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P383",
@@ -1182,9 +1167,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Term Type"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#term-group-enum"
   } ]
 }, {
   "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P384",
@@ -1210,9 +1192,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Term Source"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#term-source-enum"
   } ]
 }, {
   "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P385",
@@ -1261,9 +1240,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Relationship_to_Target"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Relationshipt_to_Target-enum"
   } ]
 }, {
   "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P394",
@@ -1286,9 +1262,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Target_Term_Type"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Target_Term_Type-enum"
   } ]
 }, {
   "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P395",
@@ -1339,9 +1312,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Target_Terminology"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Target_Terminology-enum"
   } ]
 }, {
   "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90",
@@ -1368,9 +1338,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "FULL_SYN"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#textArea"
   } ]
 }, {
   "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97",
@@ -1395,9 +1362,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "DEFINITION"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#textArea"
   } ]
 }, {
   "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P98",
@@ -1441,6 +1405,9 @@
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A type of information that is used to support an assertion."
   } ],
+  "http://purl.org/dc/elements/1.1/identifier" : [ {
+    "@value" : "ECO:0000000"
+  } ],
   "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace" : [ {
     "@value" : "eco"
   } ],
@@ -1448,9 +1415,6 @@
     "@value" : "evidence code"
   }, {
     "@value" : "evidence_code"
-  } ],
-  "http://www.geneontology.org/formats/oboInOwl#id" : [ {
-    "@value" : "ECO:0000000"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "evidence"
@@ -1473,17 +1437,11 @@
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A type of evidence where an assertion is derived from another assertion via logical inference or some non-logical but rational means."
   } ],
-  "http://www.geneontology.org/formats/oboInOwl#created_by" : [ {
-    "@value" : "mchibucos"
-  } ],
-  "http://www.geneontology.org/formats/oboInOwl#creation_date" : [ {
-    "@value" : "2015-07-14T11:19:37Z"
+  "http://purl.org/dc/elements/1.1/identifier" : [ {
+    "@value" : "ECO:0000361"
   } ],
   "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace" : [ {
     "@value" : "eco"
-  } ],
-  "http://www.geneontology.org/formats/oboInOwl#id" : [ {
-    "@value" : "ECO:0000361"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Inference is the process of deriving logical conclusions from premises known or assumed to be true, or alternatively, arriving at conclusions via some non-logical means of observation of patterns of facts, which can result in identifying new meanings and contexts for understanding. Given the evidence provided by a set of premises, deductive reasoning involves drawing conclusions that necessarily follow, i.e. are certain, whereas inductive reasoning generates conclusions that are likely to be, but are not necessarily, true."
@@ -1508,20 +1466,14 @@
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A type of inferential evidence based on a computationally derived unary inference or an inference chain in which at least one step is \ncomputationally derived."
   } ],
-  "http://www.geneontology.org/formats/oboInOwl#created_by" : [ {
-    "@value" : "mchibucos"
-  } ],
-  "http://www.geneontology.org/formats/oboInOwl#creation_date" : [ {
-    "@value" : "2015-07-14T11:24:27Z"
+  "http://purl.org/dc/elements/1.1/identifier" : [ {
+    "@value" : "ECO:0000362"
   } ],
   "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" : [ {
     "@value" : "evidence based on computational logical inference"
   } ],
   "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace" : [ {
     "@value" : "eco"
-  } ],
-  "http://www.geneontology.org/formats/oboInOwl#id" : [ {
-    "@value" : "ECO:0000362"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "computational inference"
@@ -1543,14 +1495,11 @@
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A type of evidence in which information is recorded in some documentation system, for example, but not limited to a publication, survey, or medical record."
   } ],
-  "http://www.geneontology.org/formats/oboInOwl#created_by" : [ {
-    "@value" : "snadendla"
+  "http://purl.org/dc/elements/1.1/identifier" : [ {
+    "@value" : "ECO:0006151"
   } ],
   "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace" : [ {
     "@value" : "eco"
-  } ],
-  "http://www.geneontology.org/formats/oboInOwl#id" : [ {
-    "@value" : "ECO:0006151"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "documented statement evidence"
@@ -1570,20 +1519,14 @@
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A type of evidence in which data are produced, and/or generated, and/or analyzed on a computer."
   } ],
-  "http://www.geneontology.org/formats/oboInOwl#created_by" : [ {
-    "@value" : "rctauber"
-  } ],
-  "http://www.geneontology.org/formats/oboInOwl#creation_date" : [ {
-    "@value" : "2018-12-04T19:31:00Z"
+  "http://purl.org/dc/elements/1.1/identifier" : [ {
+    "@value" : "ECO:0007672"
   } ],
   "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" : [ {
     "@value" : "in silico evidence"
   } ],
   "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace" : [ {
     "@value" : "eco"
-  } ],
-  "http://www.geneontology.org/formats/oboInOwl#id" : [ {
-    "@value" : "ECO:0007672"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "computational evidence"
@@ -1615,7 +1558,10 @@
   } ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/identifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "identifier"
+  } ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/publisher",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -1640,6 +1586,9 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/pav/createdBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
@@ -1843,12 +1792,6 @@
   "@id" : "http://semanticscience.org/resource/subset",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.geneontology.org/formats/oboInOwl#created_by",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -1859,9 +1802,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.geneontology.org/formats/oboInOwl#id",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.geneontology.org/formats/oboInOwl#inSubset",
@@ -1888,7 +1828,7 @@
   "@id" : "https://w3id.org/eboca/evidences#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/publisher" : [ {
-    "@value" : "http://www.oeg-upm.net"
+    "@id" : "https://oeg.fi.upm.es/"
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@value" : "Evidences and Provenance of Associations Between Concepts (EBOCA Evidences)"
@@ -1904,20 +1844,26 @@
     "@value" : "2022-05-20"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@value" : "http://www.oeg-upm.net"
+    "@id" : "https://oeg.fi.upm.es/"
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "This ontology aims to model the evidences and provenance of associations between concepts"
   } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://purl.org/NET/rdflicense/cc-by-nc-sa4.0"
+  } ],
   "http://purl.org/vocab/vann/modified" : [ {
-    "@value" : "2022-06-06"
+    "@value" : "2022-06-09"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "ebocaev"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@id" : "https://w3id.org/def/eboca"
+    "@id" : "https://w3id.org/eboca/evidences#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@value" : "http://drugs4covid.oeg-upm.net"
+    "@id" : "https://drugs4covid.oeg.fi.upm.es/"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "v0.1.0"
