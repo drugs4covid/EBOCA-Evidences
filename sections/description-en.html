@@ -45,3 +45,65 @@ follows the [Chowlk notation](https://chowlk.linkeddata.es/notation.html).
   the paragraphs come form and where can they be found, the class <tt>fabio:Expression</tt> is
   reused, that is able to describe papers among other things.
 </p>
+
+<h3 id="examples1" class="list">Example</h3>
+<p>
+  The following example shows annotated data with the EBOCA evidences module.
+  The example shows an association (<tt>:dgassoc-Severe%20acute%20respiratory%20syndrome%20coronavirus%202-ACE-2</tt>)
+  between an gene (<tt>:gene-ACE-2</tt>) and a disease (<tt>:dis-Severe%20acute%20respiratory%20syndrome%20coronavirus%202</tt>).
+  For this association, two evidences are found
+  (<tt>:evidence-Severe%20acute%20respiratory%20syndrome%20coronavirus%202-ACE-2-3926422d473cba48a69a7b79636681db</tt>
+  and <tt>:evidence-Severe%20acute%20respiratory%20syndrome%20coronavirus%202-ACE-2-8168e4815609026c8fde99dfa13d3247</tt>)
+  in two different paragraphs
+  (<tt>:paragraph-3926422d473cba48a69a7b79636681db</tt> and <tt>:paragraph-8168e4815609026c8fde99dfa13d3247</tt>).
+
+</p>
+
+
+<pre>
+@prefix rdfs: &lthttp://www.w3.org/2000/01/rdf-schema#> .
+@prefix sio: &lthttp://semanticscience.org/resource/> .
+@prefix pav: &lthttp://purl.org/pav/> .
+@prefix xsd: &lthttp://www.w3.org/2001/XMLSchema#> .
+@prefix dc: &lthttp://purl.org/dc/terms/> .
+@prefix ebocaev: &lthttps://w3id.org/eboca/evidences#> .
+@prefix obo: &lthttp://purl.obolibrary.org/obo/> .
+@prefix : &lthttp://vocab.linkeddata.es/res/eboca-evidences/> .
+
+:gene-ACE-2
+  a &lthttp://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16612> ;
+  rdfs:label "ACE-2" .
+
+:dis-Severe%20acute%20respiratory%20syndrome%20coronavirus%202
+  a &lthttp://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C7057> ;
+  rdfs:label "Severe acute respiratory syndrome coronavirus 2" .
+
+:dgassoc-Severe%20acute%20respiratory%20syndrome%20coronavirus%202-ACE-2
+  sio:SIO_000628 :gene-ACE-2, :dis-Severe%20acute%20respiratory%20syndrome%20coronavirus%202 ;
+  a sio:000983, sio:SIO_000897 ;
+  rdfs:comment "Association between disease Severe acute respiratory syndrome coronavirus 2 and gene ACE-2" ;
+  rdfs:label "Severe acute respiratory syndrome coronavirus 2-ACE-2" ;
+  sio:SIO_000772 :evidence-Severe%20acute%20respiratory%20syndrome%20coronavirus%202-ACE-2-8168e4815609026c8fde99dfa13d3247, :evidence-Severe%20acute%20respiratory%20syndrome%20coronavirus%202-ACE-2-3926422d473cba48a69a7b79636681db .
+
+:evidence-Severe%20acute%20respiratory%20syndrome%20coronavirus%202-ACE-2-3926422d473cba48a69a7b79636681db
+  rdfs:comment "Evidence of association between disease Severe acute respiratory syndrome coronavirus 2 and gene ACE-2 in paragraph 3926422d473cba48a69a7b79636681db" ;
+  rdfs:label "Severe acute respiratory syndrome coronavirus 2-ACE-2-3926422d473cba48a69a7b79636681db" ;
+  a ebocaev:Evidence, obo:ECO_0007672 ;
+  pav:createdOn "2022-06-08 00:00:00"^^xsd:dateTime ;
+  pav:lastUpdatedOn "2022-06-09 00:00:00"^^xsd:dateTime ;
+  pav:version "1726661743073034241" ;
+  pav:createdBy &lthttps://oeg.fi.upm.es/> ;
+  pav:createdWith &lthttps://github.com/drugs4covid/bio-ner> ;
+  pav:derivedFrom :paragraph-3926422d473cba48a69a7b79636681db .
+
+:evidence-Severe%20acute%20respiratory%20syndrome%20coronavirus%202-ACE-2-8168e4815609026c8fde99dfa13d3247
+  rdfs:comment "Evidence of association between disease Severe acute respiratory syndrome coronavirus 2 and gene ACE-2 in paragraph 8168e4815609026c8fde99dfa13d3247" ;
+  rdfs:label "Severe acute respiratory syndrome coronavirus 2-ACE-2-8168e4815609026c8fde99dfa13d3247" ;
+  a ebocaev:Evidence, obo:ECO_0007672 ;
+  pav:createdOn "2022-06-08 00:00:00"^^xsd:dateTime ;
+  pav:lastUpdatedOn "2022-06-09 00:00:00"^^xsd:dateTime ;
+  pav:version "1726661743075131393" ;
+  pav:createdBy &lthttps://oeg.fi.upm.es/> ;
+  pav:createdWith &lthttps://github.com/drugs4covid/bio-ner> ;
+  pav:derivedFrom :paragraph-8168e4815609026c8fde99dfa13d3247 .
+</pre>
